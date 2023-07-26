@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+body{
+    margin:0;
+}
+.os-400{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.os-700{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.tw-400{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+.tw-700{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+.f-20{
+    font-size: 1.25rem !important;
+}
+.f-24{
+    font-size: 1.5rem !important;
+}
+.text-black{
+    color: #0000;
+}
+.bg-white{
+    background-color: #ffff;
+}
+.bg-2{
+    background-color: #D9D9D9;
+}
+.bg-3{
+    background-color: #C0C0C0;
+}
+.p-10{
+    padding-top: 50px;
+}
+.nav-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 3rem 2rem 3rem;
+    align-items: center;
+    column-gap: 20px
+}
+.nav-bar{
+    display:grid;
+    grid-template-columns: repeat(5,190px);
+    justify-items: center ;
+}
+.nav-item{
+    cursor:pointer;
+}
+
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.separacion-cuadro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+    
+}
+.vista-cuadro{
+    width: 100%;
+    height: 100%;
+    /* width: 100%;
+    min-height: 100%; */
+}
+.text-center{
+    text-align: center;
+}
+
+.progreso {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.progreso li {
+  position: relative;
+  display: inline-block;
+  padding: 4px 12px;
+  margin-left: 40px;
+}
+
+.progreso li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -35px;
+  width: 30px;
+  height: 1px;
+}
+
+.step-actual{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.step-actual::after{
+    background-color: black;
+}
+.step-prox::after{
+    background-color: #D9D9D9;
+}
+.step-prox{
+    background-color: #D9D9D9;
+    color: white;
+    border-radius: 50%;
+}
+
+ul{
+    padding: 0;
+}
+
+.a-select{
+    padding-bottom: 1px ;
+    text-decoration: underline black;
+    text-underline-offset: 5px;
+    font-weight: 700;
+}
