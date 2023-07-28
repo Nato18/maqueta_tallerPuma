@@ -45,7 +45,6 @@ $(".volver").click( () =>{
 
   }
 });
-
 $(".siguiente").click( () =>{
   console.log(seccion+pasoCounter);
   $("#"+seccion+pasoCounter).hide();
@@ -53,19 +52,34 @@ $(".siguiente").click( () =>{
   $("#"+seccion+pasoCounter).show();
   $(`li:contains("${pasoCounter}")`).removeClass("step-prox");
   $(`li:contains("${pasoCounter}")`).addClass("step-actual");
-
-
 });
-
-
-
 
 $("#largo").on('blur', () => {
     $(".valorLargo").html($("#largo").val() + " cm");
-  });
+});
 $("#ancho").on('blur', () => {
     $(".valorAncho").html($("#ancho").val() + " cm");
-  });
+});
 
+let colorEnmarcacion = "";
+let botonPrevio = null;
 
+$(".btnColor").click(function() {
+  let textoBoton = $(this).text().trim();
+  if (colorEnmarcacion !== "") {
+    // Buscamos y quitamos la clase al botón previo
+    if (botonPrevio !== null) {
+      botonPrevio.removeClass("btnColorBorder");
+    }
+    // Asignamos el botón actual como el botón previo
+    botonPrevio = $(".btnColor").filter(function() {
+      return $(this).text().trim() === colorEnmarcacion;
+    });
+    botonPrevio.removeClass("btnColorBorder");
+  }
+  // Asignamos el botón actual como el nuevo botón previo
+  botonPrevio = $(this);
+  $(this).addClass("btnColorBorder");
+  colorEnmarcacion = textoBoton;
+});
 
