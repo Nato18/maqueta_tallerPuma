@@ -9,11 +9,11 @@
     <div class="f-18 os-400"> Posteriormente se te indicará la medida total que tendrá tu cuadro considerando los centímetros del tipo de marco que elijas y si deseas o no añadir paspartú.</div>
 
     <div class="flex mt-20 g-40">
-        <div class="flex f-align-.items-center g-40">
+        <div class="flex f-align-items-center g-40">
             <label for="largo" class="os-700 f-18">Largo</label>
             <input name="largo" id="largo" class="medidas border-0 f-18 os-400 text-center" type="text" placeholder="000">
         </div>
-        <div class="flex f-align-.items-center g-40">
+        <div class="flex f-align-items-center g-40">
             <label for="ancho" class="os-700 f-18">Ancho</label>
             <input name="ancho" id="ancho" class="medidas border-0 f-18 os-400 text-center" type="text" placeholder="000">
 
