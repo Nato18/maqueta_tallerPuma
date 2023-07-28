@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
-
+html, body {
+    height: 100%;
+  }
 body{
-    /* min-height: 100vh; */
     margin: 0;
+}
+
+.main{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .os-400{
     font-family: 'Open Sans', sans-serif;
@@ -98,7 +103,8 @@ body{
     justify-content: space-between;
 }
 .f-direction-c{
-    flex-direction: column
+    flex-direction: column;
+    margin-bottom: 40px;
 }
 .f-align-items-center{
     align-items: center;
@@ -108,9 +114,9 @@ a{
     color: black;
 }
 .separacion-cuadro{
+    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 90vh;
     
 }
 
@@ -224,15 +230,18 @@ footer{
     justify-content: center;
     gap:80px;
     padding: 20px 0;
-}
-.footer {
-    margin-top: auto;
-    width: 100%;
     background-color: #000;
     color:#fff;
+    width: 100%;
+    text-align: center;
+}
+/* .footer {
+    margin-top: auto;
+    width: 100%;
     text-align: center;
   
-}
+} */
+
 .flex-cuadro{
     display: flex;
     flex-direction: column;
